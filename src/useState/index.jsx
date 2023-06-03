@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, {useState} from "react";
 
-const App = () => {
+export const State = () => {
     const [count, setCount] = useState(0);
     const [inputValue, setInputValue] = useState();
 
@@ -16,10 +16,8 @@ const App = () => {
         <div>
             <p>{count}</p>
             <button onClick={onClick}>add 1</button> <br/><br/>
-           <input value={inputValue} onChange={onChangeInput}/>
+            <input value={inputValue} onChange={onChangeInput}/>
             <p>{inputValue}</p>
         </div>
     )
 }
-
-export default App;
