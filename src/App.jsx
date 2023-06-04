@@ -1,11 +1,10 @@
-import React, {useState} from 'react';
-import {LifeCycle} from "./lifecycle/lifecycle";
-import {CustomHooks} from "./CustomHooks";
+import React from 'react';
+import {Memo} from "./useMemo";
 
 const App = () => {
 
     return (<div>
-       <CustomHooks />
+        <Memo/>
     </div>)
 }
 
